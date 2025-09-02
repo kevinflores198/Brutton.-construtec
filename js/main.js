@@ -25,7 +25,7 @@
 	});
 
 	var toggleButton = $('.menu-toggle'),
-		nav = $('.main-navigation');
+		nav = $('.navegation-content');
 	toggleButton.on('click', function (event) {
 		event.preventDefault();
 		toggleButton.toggleClass('is-clicked');
@@ -36,7 +36,7 @@
 		if (toggleButton.is(':visible')) nav.addClass('mobile');
 		else nav.removeClass('mobile');
 	});
-	$('#main-nav-wrap li a').on("click", function () {
+	$('#navegation li a').on("click", function () {
 		if (nav.hasClass('mobile')) {
 			toggleButton.toggleClass('is-clicked');
 			nav.fadeOut();
@@ -44,13 +44,13 @@
 	});
 
 	var sections = $("section"),
-		navigation_links = $("#main-nav-wrap li a");
+		navigation_links = $("#navegation li a");
 	sections.waypoint({
 		handler: function (direction) {
 			var active_section;
 			active_section = $('section#' + this.element.id);
 			if (direction === "up") active_section = active_section.prev();
-			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');
+			var active_link = $('#navegation a[href="#' + active_section.attr("id") + '"]');
 			navigation_links.parent().removeClass("current");
 			active_link.parent().addClass("current");
 		},
