@@ -1142,3 +1142,12 @@ a.menu-toggle {
 	margin-left: .5rem;
 	content: '\201D';
 }
+
+#carrousel .carrousel-content img{
+	width: 400px;
+	height: auto;
+	margin: 0 auto 1.2rem auto;
+	display: block;
+	border-radius: 50%;
+	border: 9px solid #EAEAED;
+}
