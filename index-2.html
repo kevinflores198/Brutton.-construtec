@@ -12,6 +12,7 @@
 	<script src="js/modernizr.js"></script>
 	<link rel="icon" type="image/png" href="images/logo-img.png">
 	<script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body id="top">
@@ -136,16 +137,19 @@
 	<!-- Galeria ================================================== -->
 	<section id="galery">
 		<div class="carrousel">
+			<div class="section-intro with-bottom-line">
 			<h3>Galeria</h3>
 			<h2>Os nossos projetos.</h2>
+		</div>
 			<div class="flex-container">
 				<div id="carrousel" class="carrousel-content">
 					<ul class="slides">
 						<li>
 							<div class="carrousel-content">
-								<h4>Projeto de construção de calçada</h4>
-								<h5>Place</h5>
-								<img src="images/calcada-1.jpg" alt="">
+								<div class="carrousel-info">
+									<h4>Construção de calçada</h4>
+								</div>
+								<img class="carrousel" src="images/calcada-1.jpg" alt="">
 								<p>
 									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime vel quos eius
 									dignissimos
@@ -160,9 +164,10 @@
 						</li>
 						<li>
 							<div class="carrousel-content">
-								<h4>Projeto de construção de calçada 2</h4>
-								<h5>Place</h5>
-								<img src="images/calcada-2.jpg" alt="">
+								<div class="carrousel-info">
+									<h4>Construção de calçada 2</h4>
+								</div>
+								<img class="carrousel" src="images/calcada-2.jpg" alt="">
 								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime vel quos eius
 									dignissimos
 									deleniti
@@ -176,9 +181,10 @@
 						</li>
 						<li>
 							<div class="carrousel-content">
-								<h4>Projeto de construção de calçada 3</h4>
-								<h5>Place</h5>
-								<img src="images/calcada-3.jpg" alt="">
+								<div class="carrousel-info">
+									<h4>construção de calçada 3</h4>
+								</div>
+								<img class="carrousel" src="images/calcada-3.jpg" alt="">
 								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime vel quos eius
 									dignissimos
 									deleniti
@@ -194,15 +200,15 @@
 				</div>
 			</div>
 		</div>
-	</section>
 
-	<section id="" style="background-color: #ffff; padding: 1rem;">
-		<div class="row section-ads">
-			<div class="col-twelve">
-				<div class="ad-content">
-					<h2 class="h01"><a>A nossa galeria de fotos!</a></h2>
-					<div class="action">
-						<a class="button large round" href="galery.html" target="_blank">Galeria</a>
+		<div class="contact-us">
+			<div class="row section-ads">
+				<div class="col-twelve">
+					<div class="ad-content">
+						<h2 class="h01"><a>A nossa galeria de fotos!</a></h2>
+						<div class="action">
+							<a class="button button-primary" href="galery.html" target="_blank">Galeria</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -211,16 +217,18 @@
 
 	<!-- Contato ================================================== -->
 	<section id="contact">
-		<h3>Fala conosco!</h3>
-		<h2>Contato</h2>
-		<p class="caption">
-			Estamos prontos para transformar seu projeto em
-			realidade. Fale conosco e receba um atendimento
-			personalizado com soluções sob medida para você!
-		</p>
+		<div class="section-intro with-bottom-line">
+			<h3>Fala conosco!</h3>
+			<h2>Contato</h2>
+			<p class="caption">
+				Estamos prontos para transformar seu projeto em
+				realidade. Fale conosco e receba um atendimento
+				personalizado com soluções sob medida para você!
+			</p>
+		</div>
 		<div class="contact-content">
-			<div class="contact-item">
-				<span>1</span>
+			<div class="contact-item" data-item="1">
+				<span></span>
 				<h5>Whatsapp 1</h5>
 				<h3>(11)9599-90095</h3>
 				<p>
@@ -230,8 +238,8 @@
 				<a href="https://wa.me/5511959990095?text=Olá!%20Estou%20interessado(a)%20em%20um%20orçamento%20ou%20visita%20técnica%20da%20BruTTon%20Construtec."
 					target="_blank" class="button button-contact">Agende sua visita</a>
 			</div>
-			<div class="contact-item">
-				<span>2</span>
+			<div class="contact-item" data-item="2">
+				<span></span>
 				<h5>Whatsapp 2</h5>
 				<h3>(48)9992-3208</h3>
 				<p>
@@ -242,8 +250,8 @@
 					target="_blank" class="button button-contact">Agende sua visita</a>
 
 			</div>
-			<div class="contact-item">
-				<span>3</span>
+			<div class="contact-item" data-item="3">
+				<span></span>
 				<h5>Email</h5>
 				<h3>brutton.construtec28@gmail.com</h3>
 				<p>
@@ -265,7 +273,7 @@
 					ajudar.</p>
 				<h5>Clique abaixo para falar direto com a gente.</h5>
 				<a href="https://wa.me/5511959990095?text=Olá!%20Estou%20interessado(a)%20em%20um%20orçamento%20ou%20visita%20técnica%20da%20BruTTon%20Construtec."
-					class="button button-primary" target="_blank">Contato</a>
+					class="button button-contact" target="_blank">Contato</a>
 			</div>
 		</div>
 	</section>
