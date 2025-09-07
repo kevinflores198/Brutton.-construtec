@@ -7,9 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/modernizr.js"></script>
     <link rel="icon" type="image/png" href="images/logo-img.png">
     <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
@@ -18,47 +16,50 @@
 <body id="top">
     <!-- header
    ================================================== -->
-    <header>
+    <header id="nav">
         <div class="row">
             <div class="logo">
-                <a href="index.html">Brutton</a>
+                <a href="index-2.html">Brutton</a>
             </div>
-            <nav id="main-nav-wrap">
-                <ul class="main-navigation">
-                    <li class="current"><a class="smoothscroll" href="#about" title="">Sobre nos</a></li>
-                    <li><a class="smoothscroll" href="#faq" title="">Contato</a></li>
-                </ul>
+            <nav id="navegation">
+                <div class="navegation-content">
+                    <li class="current"><a class="smoothscroll" href="#top">Inicio</a></li>
+                    <li><a class="smoothscroll" href="#cols">Sobre nos</a></li>
+                    <li><a class="smoothscroll" href="#contact">Contato</a></li>
+                </div>
             </nav>
             <a class="menu-toggle" href="#"><span>Menu</span></a>
         </div>
     </header>
     <!-- Sobre Nós Section
    ================================================== -->
-    <section id="about" style="background-color: #F1F1F1;">
+    <section id="about">
         <div class="row section-intro">
-            <div class="col-twelve with-bottom-line" style="padding-top: 120px;">
+            <div class="col-twelve with-bottom-line">
                 <h5>Sobre nós</h5>
-                <h1 style="color: #fd7b03;">Mais do que construir, realizamos sonhos.</h1>
-                <p class="lead">
-                    A <strong>BruTTon Construtec</strong> é uma empresa especializada em <em>construção, reformas e
+                <h1>Mais do que construir, realizamos sonhos.</h1>
+                <p class="caption">
+                    A <strong>BruTTon</strong> é uma empresa especializada em <em>construção, reformas e
                         serviços
                         complementares</em> que nasceu com o compromisso de entregar obras de alta qualidade, seguras e
                     dentro do prazo.
-                    Atuamos em cada projeto como se fosse único, unindo experiência, dedicação e inovação para garantir
-                    resultados que superem expectativas.
+                    Atuamos em cada projeto como se fosse único, unindo experiência e dedicação para garantir bons
+                    resultados.
                 </p>
-                <p class="lead">
-                    Nosso time conta com profissionais qualificados em diversas áreas da construção civil:
+                <p class="caption">
+                    Nosso time conta com profissionais em diversas áreas da construção civil:
                     <strong>administração de obras, elétrica, hidráulica, pintura, acabamentos e muito mais</strong>.
                     Trabalhamos de forma integrada, cuidando de cada detalhe, do planejamento à entrega final,
                     para que você tenha tranquilidade, confiança e um espaço transformado do jeito que sempre sonhou.
                 </p>
             </div>
         </div>
+    </section>
 
-        <div class="row about-content">
-            <div class="col-six tab-full">
-                <h3 style="color: #fd7b03;"><i class="fa-solid fa-bullseye" style="font-size: 25px;"></i> Nossa missão
+    <section id="cols" class="columns-top">
+        <div class="columns">
+            <div class="col col-2">
+                <h3><i class="fa-solid fa-bullseye"></i> Nossa missão
                 </h3>
                 <p>
                     Tornar a experiência da construção mais simples e positiva, oferecendo soluções completas
@@ -66,8 +67,11 @@
                     realizar sonhos e agregar valor à vida das pessoas e empresas que confiam em nós.
                 </p>
             </div>
-            <div class="col-six tab-full">
-                <h3 style="color: #fd7b03;"><i class="fa-solid fa-handshake" style="font-size: 25px;"></i> Nossos
+            <div class="col-img">
+                <img src="images/logo-complete.png" alt="">
+            </div>
+            <div class="col">
+                <h3><i class="fa-solid fa-handshake"></i> Nossos
                     valores</h3>
                 <ul>
                     <li>✔ Transparência e respeito em cada etapa</li>
@@ -79,9 +83,9 @@
             </div>
         </div>
 
-        <div class="row section-intro" style="margin-top:2rem;">
-            <div class="col-twelve">
-                <h2 class="h01" style="color: #fd7b03;">Por que escolher a BruTTon Construtec?</h2>
+        <div class="col">
+            <div class="col-three">
+                <h2>Por que escolher a BruTTon Construtec?</h2>
                 <p class="lead">
                     Porque não entregamos apenas estruturas. Entregamos ambientes que inspiram e transformam.
                     Cada cliente recebe acompanhamento personalizado, soluções sob medida e a garantia de uma equipe
@@ -90,81 +94,67 @@
                 </p>
             </div>
         </div>
-        <section id="faq" style="margin-top: 0;">
-            <div class="row section-ads">
-                <div class="col-twelve">
-                    <div class="ad-content">
-                        <h2 class="h01"><a href="">Lembrete!</a></h2>
-                        <p class="lead">
-                            Nosso número principal de atendimento via WhatsApp está sempre disponível para te ajudar.
-                        </p><br>
-                        <p>Clique abaixo para falar direto com a gente.</p>
-                        <div class="action">
-                            <a class="button large round"
-                                href="https://wa.me/5548988648031?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20seus%20serviços%20Brutton%20Construtec!%20Muito%20Obrigado!"
-                                target="_blank">Contato</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </section>
-    <!-- footer
-   ================================================== -->
-    <footer>
 
-        <div class="footer-main">
-            <div class="row">
-                <div class="">
-                    <div class="logo">
-                        <a href="index.html">Brutton</a>
-                    </div>
-                    <p style="color: white;">
-                        Sao Jose, SC Brasil<br>
-                        brutton.construtec28@gmail.com &nbsp; <br>
-                        +48 9992-3208 <br>
-                        +11 9599-90095
-                    </p>
+    <div id="contact">
+        <div class="contact-content-2">
+            <h2>Contato</h2>
+            <p>Nosso número principal de atendimento via WhatsApp está sempre disponível.</p>
+            <a class="button button-primary"
+                href="https://wa.me/5548988648031?text=Olá!%20Gostaria%20de%20mais%20informações..."
+                target="_blank">Falar no WhatsApp</a>
+        </div>
+    </div>
+    <!-- footer ================================================== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3>Brutton</h3>
+                    <a>Sao Jose, SC Brasil</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brutton.construtec28@gmail.com&su=Contato%20via%20site%20BruTTon&body=Ol%C3%A1,%20gostaria%20de%20solicitar%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os."
+                        target="_blank">brutton.construtec28@gmail.com</a>
+                    <a href="https://wa.me/48999223208?text=Olá!%20Estou%20interessado(a)%20em%20um%20orçamento%20ou%20visita%20técnica%20da%20BruTTon%20Construtec."
+                        target="_blank">+48 9992-3208</a>
+                    <a href="https://wa.me/5511959990095?text=Olá!%20Estou%20interessado(a)%20em%20um%20orçamento%20ou%20visita%20técnica%20da%20BruTTon%20Construtec."
+                        target="_blank">+11 9599-90095</a>
                 </div>
-                <div class="">
-                    <h4><a href="#contato">Sobre nos</a></h4>
-                    <ul>
-                        <li><a style="color: white;" href="about.html">Sobre nos</a></li>
-                        <li><a style="color: white;" target="_blank" href="galery.html">Galeria de fotos</a></li>
-                    </ul>
+                <div class="footer-col">
+                    <h3>Sobre nos</h3>
+                    <a href="about.html">Um pouco de nos</a>
+                    <a href="galery-2.html">Galeria de fotos</a>
+                    <a href="index-2.html">Voltar ao Inicio</a>
                 </div>
-                <div class="">
-                    <h4><a href="#contato">Redes</a></h4>
-                    <ul>
-                        <li><a style="color: white;" href="#">Instagram</a></li>
-                        <li><a style="color: white;" href="#">Facebook</a></li>
-                        <li><a style="color: #fd7b03;">EM BREVE:</a></li>
-                        <li><a style="color: white;" href="#">Tik Tok</a></li>
-                        <li><a style="color: white;" href="#">LinkedIn</a></li>
-                        <li><a style="color: white;" href="#">Youtube</a></li>
-                    </ul>
+                <div class="footer-col">
+                    <h3>Redes</h3>
+                    <a href="#">Facebook</a>
+                    <a href="https://www.instagram.com/construtorabrutton/" target="_blank">Instagram</a>
+                    <h4>Em Breve</h4>
+                    <a href="#">Tik Tok</a>
+                    <a href="#">Linked In</a>
+                    <a href="#">YouTube</a>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="row">
-                <div class="col-twelve">
-                    <div class="copyright">
-                        <p style="color: white;">&copy; <span id="currentyear"></span> BruTTon Construtec. Todos os
-                            dereitos reservados.</p>
-                        <span style="color: white;">Disenhado por <a target="_blank"
-                                href="https://github.com/kevinflores198">Kevin
-                                Flores</a></span>
-                    </div>
-                    <div id="go-top" style="display: block;">
-                        <a class="smoothscroll" title="Back to Top" href="#top"><i
-                                class="icon ion-android-arrow-up"></i></a>
-                    </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>
+                        &copy; <span id="currentyear"></span>
+                        BruTTon Construtec. Todos os dereitos reservados.
+                    </p>
+                    <a href="https://github.com/kevinflores198">Disenhado por Kevin Flores</a>
                 </div>
+                <div id=" go-top" style="display: block;">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i
+                            class="icon ion-android-arrow-up"></i></a>
+                </div>
+                <div class="arrowUp" id="arrowUp">
+                    <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+
+                <div className="scroll"></div>
             </div>
         </div>
     </footer>
-
     <div id="preloader">
         <div id="loader"></div>
     </div>

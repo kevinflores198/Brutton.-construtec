@@ -70,20 +70,7 @@
 			touch: true,
 		});
 	});
-	$('.smoothscroll').on('click', function (e) {
 
-		e.preventDefault();
-
-		var target = this.hash,
-			$target = $(target);
-
-		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top
-		}, 800, 'swing', function () {
-			window.location.hash = target;
-		});
-
-	});
 	$('input, textarea, select').placeholder()
 	var mailChimpURL = 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
 	$('#mc-form').ajaxChimp({
@@ -108,4 +95,29 @@
 			}
 		}
 	});
+
+	function modalSetup(openId, modalId) {
+		const openBtn = document.getElementById(openId);
+		const modal = document.getElementById(modalId);
+		const closeBtn = modal.querySelector(".close");
+
+		openBtn.addEventListener("click", () => modal.style.display = "block");
+		closeBtn.addEventListener("click", () => modal.style.display = "none");
+		window.addEventListener("click", (e) => {
+			if (e.target === modal) modal.style.display = "none";
+		});
+	}
+
+	window.addEventListener("scroll", () => {
+		const scroll = document.documentElement.scrollTop;
+		if (scroll > 100) {
+			arrowUp.style.right = 20 + "px";
+		} else {
+			arrowUp.style.right = -100 + "px";
+		}
+	})
+
+	modalSetup("openGalery1", "galeriaModal1");
+	modalSetup("openGalery2", "galeriaModal2");
+	modalSetup("openGalery3", "galeriaModal3");
 })(jQuery);
