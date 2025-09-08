@@ -1520,6 +1520,9 @@ a.menu-toggle {
 
 #contact p {
     padding: 1rem;
+    font-family: "merriweather-light", serif;
+    font-size: 1.8rem;
+    line-height: 1.8;
 }
 
 #contact .section-intro h3 {
@@ -2161,7 +2164,7 @@ footer .footer-bottom {
     width: 70%;
 }
 
-.col .col-three p{
+.col .col-three p {
     margin: 0 auto;
 }
 
