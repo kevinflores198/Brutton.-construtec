@@ -24,6 +24,8 @@
 
 	});
 
+
+
 	var toggleButton = $('.menu-toggle'),
 		nav = $('.navegation-content');
 	toggleButton.on('click', function (event) {
@@ -56,8 +58,9 @@
 		},
 		offset: '25%'
 	});
+
 	$(window).load(function () {
-		$('#carrousel').flexslider({
+		$('#galery-slider').flexslider({
 			namespace: "flex-",
 			controlsContainer: "",
 			animation: 'slide',

@@ -8,6 +8,7 @@
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/base.css">
 	<script src="js/modernizr.js"></script>
 	<link rel="icon" type="image/png" href="images/logo-img.png">
 	<script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
@@ -31,7 +32,7 @@
 				<div class="navegation-content">
 					<li class="current"><a class="smoothscroll" href="#top">Inicio</a></li>
 					<li><a class="smoothscroll" href="#service">Serviços</a></li>
-					<li><a class="smoothscroll" href="#galery">Galeria</a></li>
+					<li><a class="smoothscroll" href="#galeries">Galeria</a></li>
 					<li><a class="smoothscroll" href="#contact">Contato</a></li>
 				</div>
 			</nav>
@@ -71,7 +72,8 @@
 						<div class="bgrid feature">
 							<span class="icon"><i class="fa-brands fa-black-tie"></i></span>
 							<h3>Administraçao</h3>
-							<p>Gerenciamos todas as etapas da obra com eficiência, planejamento e responsabilidade.
+							<p class="caption">Gerenciamos todas as etapas da obra com eficiência, planejamento e
+								responsabilidade.
 								Garantimos que tudo seja executado dentro do prazo e orçamento definidos.</p>
 						</div>
 					</div>
@@ -79,7 +81,7 @@
 						<div class="bgrid">
 							<span class="icon"><i class="fa-solid fa-hammer"></i></span>
 							<h3>Construção e reformas</h3>
-							<p>
+							<p class="caption">
 								Executamos projetos de construção civil e reformas com qualidade, desde a fundação até o
 								acabamento, sempre respeitando normas técnicas e o desejo do cliente.
 							</p>
@@ -89,7 +91,7 @@
 						<div class="bgrid">
 							<span class="icon"><i class="fa-solid fa-hand-holding-droplet"></i></span>
 							<h3>Hidráulica</h3>
-							<p>
+							<p class="caption">
 								Instalamos e reparamos sistemas hidráulicos com segurança e precisão. Atendemos desde
 								pequenas manutenções até projetos completos de encanamento.
 							</p>
@@ -99,7 +101,7 @@
 						<div class="bgrid">
 							<span class="icon"><i class="fa-solid fa-plug"></i></span>
 							<h3>Elétrica</h3>
-							<p>
+							<p class="caption">
 								Soluções elétricas confiáveis para sua residência ou empresa, incluindo instalações,
 								reparos,
 								quadros de energia e iluminação com total segurança.
@@ -111,7 +113,7 @@
 							<span class="icon"></span>
 							<span class="icon"><i class="fa-solid fa-paint-roller"></i></span>
 							<h3>Pintura</h3>
-							<p>
+							<p class="caption">
 								Pintura interna e externa com acabamento de qualidade. Utilizamos técnicas modernas e
 								materiais duráveis para renovar e valorizar o seu espaço.
 							</p>
@@ -121,7 +123,7 @@
 						<div class="bgrid">
 							<span class="icon"><i class="fa-solid fa-person-digging"></i></span>
 							<h3>Pós-obra</h3>
-							<p>
+							<p class="caption">
 								Realizamos a limpeza completa após a obra ou reforma, deixando o ambiente pronto para
 								uso.
 								Detalhamos cada canto com zelo e profissionalismo.
@@ -138,51 +140,57 @@
 					class="button button-primary" target="_blank">Contato</a>
 			</div>
 		</div>
+
 	</section>
 	<!-- Galeria ================================================== -->
-	<section id="galery">
-		<div class="carrousel">
-			<div class="section-intro with-bottom-line">
-				<h3>Galeria</h3>
-				<h2>Os nossos projetos.</h2>
+
+	<section id="galeries">
+		<div class="row">
+			<div class="col-twelve">
+				<h5>Galeria</h5>
+				<h2 class="h01">Os nossos projetos.</h2>
 			</div>
-			<div class="flex-container">
-				<div id="carrousel" class="carrousel-content">
-					<ul class="slides">
-						<li>
-							<div class="carrousel-content">
-								<div class="carrousel-info">
-									<h4>Processo de maquinário</h4>
-								</div>
-								<img class="carrousel" src="images/trabalho-1.jpg" alt="">
-
-								Com o uso de máquinas de alta qualidade, conseguimos entregar o nosso melhor
-								trabalho
-
+		</div>
+		<div class="row flex-container">
+			<div id="galery-slider" class="flexslider">
+				<ul class="slides">
+					<li>
+						<div class="galery-author">
+							<div class="author-info">
+								Processo de maquinário
 							</div>
-						</li>
-						<li>
-							<div class="carrousel-content">
-								<div class="carrousel-info">
-									<h4>Trabalho especializado</h4>
-								</div>
-								<img class="carrousel" src="images/trabalho-2.jpg" alt="">
-								Com a ajuda de especialistas, garantimos excelência em cada detalhe de nossos trabalhos.
+						</div>
+						<img class="carrousel" src="images/trabalho-1.jpg" alt="calcada 1">
+						<p>
+							Com o uso de máquinas de alta qualidade, conseguimos entregar o nosso melhor
+							trabalho
+						</p>
+					</li>
+					<li>
+						<div class="galery-author">
+							<div class="author-info">
+								Trabalho especializado
+							</div>
+						</div>
+						<img class="carrousel" src="images/trabalho-2.jpg" alt="calcada 2">
+						<p>
+							Com a ajuda de especialistas, garantimos excelência em cada detalhe de nossos trabalhos.
 
+						</p>
+					</li>
+					<li>
+						<div class="galery-author">
+							<div class="author-info">
+								Pequenos detalhes
 							</div>
-						</li>
-						<li>
-							<div class="carrousel-content">
-								<div class="carrousel-info">
-									<h4>Pequenos detalhes</h4>
-								</div>
-								<img class="carrousel" src="images/trabalho-3.jpg" alt="">
-								Nossos trabalhos são realizados com dedicação total, para que cada mínimo detalhe seja
-								valorizado.
-							</div>
-						</li>
-					</ul>
-				</div>
+						</div>
+						<img class="carrousel" src="images/trabalho-3.jpg" alt="calcada 3">
+						<p>
+							Nossos trabalhos são realizados com dedicação total, para que cada mínimo detalhe seja
+							valorizado.
+						</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 
@@ -199,6 +207,8 @@
 			</div>
 		</div>
 	</section>
+
+
 
 	<!-- Contato ================================================== -->
 	<section id="contact">
@@ -254,12 +264,12 @@
 		<div class="contact-us">
 			<div class="contact-us-container">
 				<div class="with-bottom-line">
-					<h2>Lembrete!</h2>
+					<h2 style="font-family: merriweather-bold, serif;">Lembrete!</h2>
 					<p class="caption">Nosso número principal de atendimento via WhatsApp está sempre disponível para te
 						ajudar.</p>
 				</div>
-				<h5>Clique abaixo para falar direto com a gente.</h5>
-
+				<h5 style="padding: 40px;font-family: merriweather-light, serif;font-size: 1.8rem;line-height: 1.8;">
+					Clique abaixo para falar direto com a gente.</h5>
 				<a href="https://wa.me/5511959990095?text=Olá!%20Estou%20interessado(a)%20em%20um%20orçamento%20ou%20visita%20técnica%20da%20BruTTon%20Construtec."
 					class="button button-primary" target="_blank">Contato</a>
 			</div>
