@@ -253,8 +253,26 @@
 					Envie sua proposta, documentos ou dúvidas mais detalhadas por e-mail. Responderemos o mais breve
 					possível com toda atenção que você merece.
 				</p>
-				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=brutton.construtec28@gmail.com&su=Contato%20via%20site%20BruTTon&body=Ol%C3%A1,%20gostaria%20de%20solicitar%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os."
-					target="_blank" class="button button-contact">Agende sua visita</a>
+				<a href="#" onclick="sendEmail(event)" class="button button-contact">Agende sua visita</a>
+
+				<script>
+					function sendEmail(e) {
+						// evita que el <a href="#"> refresque la página
+						e.preventDefault();
+
+						// Primero intentamos mailto
+						window.location.href = "mailto:brutton.construtec28@gmail.com?subject=Contato%20via%20site%20BruTTon&body=Ol%C3%A1,%20gostaria%20de%20solicitar%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.";
+
+						// Si en 1 segundo no abrió nada, redirigimos a Gmail
+						setTimeout(function () {
+							window.open(
+								"https://mail.google.com/mail/?view=cm&fs=1&to=brutton.construtec28@gmail.com&su=Contato%20via%20site%20BruTTon&body=Ol%C3%A1,%20gostaria%20de%20solicitar%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.",
+								"_blank"
+							);
+						}, 1000);
+					}
+				</script>
+
 			</div>
 		</div>
 	</section>
