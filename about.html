@@ -23,9 +23,11 @@
             </div>
             <nav id="navegation">
                 <div class="navegation-content">
-                    <li class="current"><a class="smoothscroll" href="#top">Inicio</a></li>
-                    <li><a class="smoothscroll" href="#cols">Sobre nos</a></li>
-                    <li><a class="smoothscroll" href="#contact">Contato</a></li>
+                    <ul>
+                        <li class="current"><a class="smoothscroll" href="#top">Inicio</a></li>
+                        <li><a class="smoothscroll" href="#cols">Sobre nós</a></li>
+                        <li><a class="smoothscroll" href="#contact">Contato</a></li>
+                    </ul>
                 </div>
             </nav>
             <a class="menu-toggle" href="#"><span>Menu</span></a>
@@ -110,27 +112,42 @@
             <div class="footer-columns">
                 <div class="footer-col">
                     <h3>Brutton</h3>
-                    <a>Sao Jose, SC Brasil</a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brutton.construtec28@gmail.com&su=Contato%20via%20site%20BruTTon&body=Ol%C3%A1,%20gostaria%20de%20solicitar%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os."
-                        target="_blank">brutton.construtec28@gmail.com</a>
+                    <a>São José, SC Brasil</a>
+                    <a href="#" onclick="sendEmail(event)">brutton.construtec28@gmail.com</a>
+                    <script>
+                        function sendEmail(e) {
+                            // evita que el <a href="#"> refresque la página
+                            e.preventDefault();
+
+                            // Primero intentamos mailto
+                            window.location.href = "mailto:brutton.construtec28@gmail.com?subject=Contato%20via%20site%20BruTTon&body=Ol%C3%A1,%20gostaria%20de%20solicitar%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.";
+
+                            // Si en 1 segundo no abrió nada, redirigimos a Gmail
+                            setTimeout(function () {
+                                window.open(
+                                    "https://mail.google.com/mail/?view=cm&fs=1&to=brutton.construtec28@gmail.com&su=Contato%20via%20site%20BruTTon&body=Ol%C3%A1,%20gostaria%20de%20solicitar%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.",
+                                    "_blank"
+                                );
+                            }, 1000);
+                        }
+                    </script>
                     <a href="https://wa.me/48999223208?text=Olá!%20Estou%20interessado(a)%20em%20um%20orçamento%20ou%20visita%20técnica%20da%20BruTTon%20Construtec."
                         target="_blank">+48 9992-3208</a>
                     <a href="https://wa.me/5511959990095?text=Olá!%20Estou%20interessado(a)%20em%20um%20orçamento%20ou%20visita%20técnica%20da%20BruTTon%20Construtec."
                         target="_blank">+11 9599-90095</a>
                 </div>
                 <div class="footer-col">
-                    <h3>Sobre nos</h3>
-                    <a href="about.html">Um pouco de nos</a>
+                    <h3>Sobre nós</h3>
+                    <a href="about.html">Um pouco de nós</a>
                     <a href="galery-2.html">Galeria de fotos</a>
-                    <a href="index.html">Voltar ao Inicio</a>
                 </div>
                 <div class="footer-col">
                     <h3>Redes</h3>
                     <a href="#">Facebook</a>
-                    <a href="https://www.instagram.com/construtorabrutton/" target="_blank">Instagram</a>
+                    <a href="https://www.instagram.com/construtorabrutton/">Instagram</a>
                     <h4>Em Breve</h4>
-                    <a href="#">Tik Tok</a>
-                    <a href="#">Linked In</a>
+                    <a href="#">TikTok</a>
+                    <a href="#">LinkedIn</a>
                     <a href="#">YouTube</a>
                 </div>
             </div>
@@ -138,18 +155,13 @@
                 <div class="copyright">
                     <p>
                         &copy; <span id="currentyear"></span>
-                        BruTTon Construtec. Todos os dereitos reservados.
+                        BruTTon Construtec. Todos os direitos reservados.
                     </p>
-                    <a href="https://github.com/kevinflores198">Disenhado por Kevin Flores</a>
-                </div>
-                <div id=" go-top" style="display: block;">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i
-                            class="icon ion-android-arrow-up"></i></a>
+                    <a href="https://github.com/kevinflores198">Desenhado por Kevin Flores</a>
                 </div>
                 <div class="arrowUp" id="arrowUp">
                     <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
                 </div>
-
                 <div className="scroll"></div>
             </div>
         </div>
