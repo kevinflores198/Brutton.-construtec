@@ -215,11 +215,10 @@ p img {
     background-color: #FFFFFF;
     align-items: center;
     text-align: center;
-    padding: 3rem;
 }
 
 .galery-contact-us .action{
-    padding: 2rem;
+    padding-bottom: 1rem;
 }
 p.caption {
     font-family: "merriweather-light", serif;
