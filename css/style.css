@@ -799,7 +799,7 @@ a.menu-toggle {
     font-family: "raleway-heavy", sans-serif;
     font-size: 1.4rem;
     text-transform: uppercase;
-    letter-spacing: .4rem;
+    letter-spacing: .3rem;
 }
 
 .button:focus {
@@ -919,6 +919,7 @@ a.menu-toggle {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
     margin-bottom: 60px;
+    margin: 1rem;
 }
 
 #service .list {
@@ -2009,6 +2010,7 @@ footer .footer-bottom {
     padding: 1rem;
     width: auto;
     border-radius: 10px;
+    margin-top: 2rem;
 }
 
 .gallery-card h2 {
@@ -2165,22 +2167,25 @@ footer .footer-bottom {
 
 .columns-top {
     background-color: var(--clear);
-    padding-top: 20px;
+    padding: 4rem 1rem;
+    /* menos padding general */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 15rem;
 }
 
 .columns {
     margin: 0 auto;
     display: flex;
-    margin-bottom: 60px;
-    align-items: center;
-    width: 80%;
+    flex-wrap: wrap;
+    /* permite quebrar em mobile */
+    gap: 2rem;
+    /* espaço entre colunas */
+    width: 100%;
+    max-width: 1200px;
+    /* não deixa crescer demais */
     align-items: start;
-
 }
 
 #cols {
@@ -2188,8 +2193,10 @@ footer .footer-bottom {
 }
 
 .col {
-    width: 100%;
+    flex: 1 1 300px;
+    /* ocupa espaço flexível mas não quebra abaixo de 300px */
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .col li {
@@ -2197,25 +2204,36 @@ footer .footer-bottom {
 }
 
 .col-2 {
-    padding-left: 50px;
+    padding-left: 0;
+    /* quita padding fixo que empurra */
 }
 
 .col .col-three {
     margin: 0 auto;
     text-align: center;
-    width: 70%;
-    align-items: center;
+    max-width: 800px;
 }
 
 .col .col-three p {
     margin: 0 auto;
 }
 
-@media only screen and (max-width:933px) {
+@media only screen and (max-width:956px) {
 
     .col-2 {
         padding-left: 0;
     }
+
+    .col-another {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+
 
 }
 
@@ -2226,14 +2244,12 @@ footer .footer-bottom {
     }
 }
 
-@media only screen and (max-width:767px) {
-
-
+@media only screen and (max-width: 767px) {
     .columns {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        flex-direction: column;
+        /* una debajo de la otra */
+        text-align: center;
     }
-
 }
 
 @media only screen and (max-width:740px) {
